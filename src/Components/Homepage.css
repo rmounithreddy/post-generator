@@ -1,0 +1,55 @@
+:root{
+    --bg: #f5f7fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #6c63ff;
+    --accent-2: #00c2ff;
+    --border: #e6e9ef;
+}
+
+.home-page{
+    padding: 40px 20px;
+    display:flex;
+    justify-content:center;
+}
+
+.home-container{
+    width:100%;
+    max-width:1100px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.9));
+    border-radius:12px;
+    box-shadow: 0 10px 30px rgba(16,24,40,0.08);
+    padding:28px;
+}
+
+.hp-header{margin-bottom:18px}
+.hp-header h1{margin:0;font-size:24px}
+.hp-sub{color:var(--muted);margin:6px 0 0}
+
+.hp-form{display:block;gap:12px}
+.label{display:block;margin:12px 0 6px;font-weight:600;color:#111827}
+
+.raw-input{width:100%;min-height:120px;padding:12px;border-radius:8px;border:1px solid var(--border);resize:vertical;background:var(--card)}
+
+.platforms{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0}
+.platform-option{display:inline-flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;border:1px solid transparent;background:linear-gradient(180deg,#fff,#fbfbff)}
+.platform-option input{transform:scale(1.05)}
+
+.actions{display:flex;gap:12px;margin-top:12px}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;padding:10px 14px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+.btn-primary:hover{filter:brightness(.98)}
+.btn-ghost{background:transparent;border:1px solid var(--border);padding:10px 14px;border-radius:8px;cursor:pointer}
+
+.results{margin-top:22px}
+.results-title{margin:0 0 10px}
+.posts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.post-card{background:var(--card);border:1px solid var(--border);padding:14px;border-radius:10px;min-height:100px;display:flex;flex-direction:column}
+.platform{color:var(--muted);font-size:13px;margin-bottom:6px}
+.post-text{white-space:pre-wrap;flex:1;color:#111827}
+
+.raw-response{background:#f7f9fc;padding:12px;border-radius:8px;border:1px solid var(--border);white-space:pre-wrap}
+
+@media (max-width:600px){
+    .home-container{padding:18px}
+    .hp-header h1{font-size:20px}
+}
