@@ -108,7 +108,7 @@ function HomePage() {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json',
-                    'X-goog-api-key': 'AIzaSyAr2a-Bprp75MpXuGiK9hcOrQMn72xaaao'
+                    'X-goog-api-key': 'place your api key here'
                 },
                 body:
                     JSON.stringify({
