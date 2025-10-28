@@ -1,16 +1,92 @@
-# React + Vite
+# 🧠 Post Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A smart web app that tailors your content for different social media platforms — just enter your base text, select platforms like **Twitter**, **LinkedIn**, or **Instagram**, and get perfectly formatted posts powered by **Google Gemini**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- 📝 Generate platform-specific posts (LinkedIn, Instagram, Twitter)  
+- ⚙️ Uses **Gemini API** for natural content adaptation  
+- 💬 Automatically parses and structures multi-platform AI responses  
+- 🎨 Clean, responsive UI built with **React + Vite**  
+- 🔄 Reset and regenerate functionality  
+- 💡 Graceful fallback if the AI returns unstructured text  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React (Vite)
+- **Styling:** CSS3 (custom, responsive)
+- **AI Model:** Google Gemini API
+- **Language:** JavaScript (ES6)
+
+---
+
+## 📁 Folder Structure
+
+```
+
+post-generator/
+├── src/
+│   ├── Components/
+│   │   ├── HomePage.jsx
+│   │   └── HomePage.css
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── package.json
+└── vite.config.js
+
+````
+
+---
+
+## ⚙️ Setup & Run Locally
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/<your-username>/post-generator.git
+   cd post-generator
+````
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Create a `.env` file**
+
+   ```
+   VITE_GEMINI_KEY=your_google_gemini_api_key
+   ```
+
+   > Replace your inline API key in `HomePage.jsx` with:
+   >
+   > ```js
+   > const apiKey = import.meta.env.VITE_GEMINI_KEY;
+   > ```
+
+4. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+
+   ```
+   http://localhost:5173/
+   ```
+
+## 🔮 Future Improvements
+
+* Add **copy-to-clipboard** button for each post
+* Integrate **more social platforms** (YouTube, Threads, etc.)
+* Add **tone/style selector** (professional, casual, witty)
+* Save and export posts as **PDF or text file**
+* Integrate **post scheduling** or social API sharing
+
+---
